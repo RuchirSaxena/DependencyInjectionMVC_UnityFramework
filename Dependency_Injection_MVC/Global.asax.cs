@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dependency_Injection_MVC.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace Dependency_Injection_MVC
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            IocConfigurator.ConfigureIocUnityContainer();
         }
     }
 }

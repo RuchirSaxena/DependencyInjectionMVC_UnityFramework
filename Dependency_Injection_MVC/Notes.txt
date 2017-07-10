@@ -1,0 +1,23 @@
+﻿Dependency Injection
+=====================
+Dependency Injection helps in injecting the dependent object in a class.
+
+Types of Dependency Injection:
+1.Constructor Injection  =>Most Popular
+2.Propert Injection
+3.Method Injection
+
+
+
+Unity Framework
+==================
+Unity is a dependency injection container from microsoft ,and it facilitate or take
+the reponsibility of creating objects behind the sceens , So the class using these
+objects have no idea about the creation of these dependent objects
+
+
+Differnrent types of Dendency Injection container /IOC Containers
+==================================================
+1. Unity
+2. NIject
+3. Spring .NET
