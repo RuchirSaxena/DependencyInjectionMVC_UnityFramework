@@ -4,8 +4,29 @@ Dependency Injection helps in injecting the dependent object in a class.
 
 Types of Dependency Injection:
 1.Constructor Injection  =>Most Popular
-2.Propert Injection
+2.Property Injection
 3.Method Injection
+
+Issues without DI
+====================
+Tight coupling between the object as the dependent object is created within the class,
+Also , The class in which these dependent object instances are created depend upon the
+lifetime of this class and if GC collectes class memory then its dependent object are 
+also collect the memory for there dependent object , though they may be shared in other
+palces (ie :they are shared dependencies)
+
+Advantages of DI
+===================
+1.Full disclosures of dependencies to client code
+2.Addresses the single responsibility principle- relegation of all non-essential
+  responsibilities to components outside the class
+3.Loose coupling between dependent object and dependency
+4.Giving up of control=>Inversion of control you just have to tust the injector like 
+  Unity Framework etc.
+
+Note : DI can be implemented without any DI Framework , but than it will be poor's man
+       code of maninging all the these which can be delegated to a framework which is
+	   time-tested
 
 
 
